@@ -1,33 +1,23 @@
 # 행렬 덧셈
 
+# 배열 초기화
+A = []
+B = []
+
 n, m = map(int, input().split())
 
-# A 행렬
-a = []
+# A배열 row에 다 담아서 넣기
 for i in range(n):
-    row = list(map(int, input().split()))
-    a.append(row)
+  row = list(map(int, input().split()))
+  A.append(row)
 
-# B 행렬
-b = []
+# B배열 row에 다 담아서 넣기
 for i in range(n):
-    row = list(map(int, input().split()))
-    b.append(row)
+  row = list(map(int, input().split()))
+  B.append(row)
 
-# 결과
-result = []
+# 반복 출력
 for i in range(n):
-    row = []
-    for j in range(m):
-        row.append(a[i][j] + b[i][j])
-    result.append(row)
-
-# print(result)
-# 출력
-for row in result:
-    for i in row:
-        print(i, end=" ")
-    print()
-
-
-
+  for j in range(m):
+    print(A[i][j] + B[i][j], end=" ")
+  print()
