@@ -16,7 +16,7 @@ col = 0
 # 반복문을 사용하여 행렬과 최대값 갱신
 for i in range(len(a)):
   for j in range(len(a[i])):
-    if max_val < a[i][j]:
+    if max_val <= a[i][j]:
       max_val = a[i][j]
       row = i+1
       col = j+1
