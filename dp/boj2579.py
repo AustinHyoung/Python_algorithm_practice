@@ -1,4 +1,3 @@
-# 재풀이
 n = int(input())
 scores = [0] * (n+1)
 dp = [0] * (n+1)
