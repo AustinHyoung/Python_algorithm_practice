@@ -1,7 +1,6 @@
 def solution(progresses, speeds):
   ans = []
   stack = []
-
   for p, s in zip(progresses, speeds):
     day = (100 - p) // s
     if (100 - p) % s != 0:
@@ -13,7 +12,7 @@ def solution(progresses, speeds):
     else:
       ans[-1] += 1
 
+
   return ans
 
-print(solution([93, 30, 55], [1, 30, 5]))
-# 재풀이
+print(solution([93,30,55], [1,30,5]))
